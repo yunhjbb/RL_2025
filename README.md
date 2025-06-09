@@ -7,7 +7,7 @@ Install required packages:
 
 ```bash
 pip install torch numpy gym mujoco yaml
-
-Please notice us for dependency mismatches.
+```
+ Please notify us if you encounter version mismatches or installation issues.
 
 
