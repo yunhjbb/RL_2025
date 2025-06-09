@@ -1,0 +1,40 @@
+# task config
+max_steps: 10000
+use_custom_obs: true
+custom_obs_idx: 2 # which custom obs to use?
+custom_data : [0.6, 0.0, 0.5]
+use_custom_act : true
+custom_act_idx : [1, 2, 3, 4, 5, 6, 7] # which actuator to control? e.g.) [1] : only 1st joint. [1,2,3,4,5,6,7] : full joint
+
+rewards:
+  MatchReward: 0
+  DotDealReward: 1
+  DetachmentFailureReward: 0
+  ActionPenaltyReward: 0
+  ActionSmoothnessReward: 0
+  HoldReward: 0
+  ContactReward: 0
+  DirectionReward: 1
+  StateReward: 1
+  CombinedReward: 0
+  ReachReward: 0
+  DeltaDistanceReward: 1
+  MultiLevelReward: 0
+  VelocityReward: 0
+  LiftReward : 0
+  TiltReward : 0
+  TrajectoryReward : 0
+
+termination_conditions:
+  Timeout: true
+  ContactOff: false
+  Explode: false
+  TargetReached: true
+  RobotFloorContact : true
+  SphericalBoundaryTermination: true
+
+Match_vel_bin: false
+Match_pos_bin: true
+Match_vel: [2,0,1]
+Match_pos: [3, 2, 0]
+target_tolerance: 0.01
