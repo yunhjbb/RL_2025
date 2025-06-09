@@ -10,4 +10,11 @@ pip install torch numpy gym mujoco yaml
 ```
  Please notify us if you encounter version mismatches or installation issues.
 
+```graphql
+root/
+├── algorithms/       # PPO, actor-critic modules
+├── envs/             # Custom MuJoCo environment
+├── panda_mujoco-master/           # XML configs for our robot
+├── scripts/          # Run & evaluation scripts
 
+# Quick Start
